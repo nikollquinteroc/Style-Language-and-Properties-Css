@@ -1,0 +1,87 @@
+/* Otra forma de aplicar fuentes externas de Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+
+body{
+    /* Estas son genericas */
+    font-family: 'Times New Roman', Times, serif;
+    width: 1440px;
+    height: 30px;
+    /* se puede usar un recurso externos Google fonts html por medio de links o @import*/
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+/* Esto es cuando importo desde google fonts, y en html 
+funciona con link de styles */
+
+
+
+@font-face { 
+    font-family: "miHarland";
+    src: url(../fonts/Harland\ Roselyn.ttf);
+}
+
+.contenedorImagen{
+    /* Otra fomra de poner una imagen a diferencia de html */
+    /* background-image: url('../img/logo\ batman.png'); */
+    /* background-image: url(../img/fondobatman.jpg); */
+    background-color: #E6E6E6;
+    height: 188.19px;
+    padding-left: 50%;
+}
+
+h1{
+    text-align: center;
+}
+
+h1, .tituloSeccion{
+    background-color: #c4c4c4;
+    color: #005677;
+}
+
+.dato, span{
+    font-weight: bold;
+    color: black;
+}
+
+.dato{
+    font-style: italic;
+}
+
+.textoIndentado{
+    text-indent: 75px;
+    color: #000000;
+}
+
+.firstLine{
+    margin-top: 100px;
+}
+
+.lastLine{
+    margin-bottom: 150px;
+}
+
+footer{
+    background-color: #005677;
+}
+
+.contendorFooter{
+    text-align: center;
+}
+
+.footerBatman{
+    /* Asi es como agrego un font-face a alguna estructura que necesite */
+    /* font-family: 'miHarland'; */
+    padding-left: 45%;
+    color: white;
+}
+
+.logoRedSocial{
+    padding-left: 1%;
+    width: 20px;
+}
+
+i{
+    color: #fff;
+    text-indent: 15px;
+    
+}
